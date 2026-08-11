@@ -106,4 +106,4 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 
 ---
 
-<div align="center">Made with ❤️ by Kirara Team</div>
+<div align="center">Made with by SenVenth AC</div>
