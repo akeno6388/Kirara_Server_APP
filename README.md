@@ -1,4 +1,4 @@
-# Kirara_Server
+# Kirara_Server_APP
 
 > 一款基于 WinUI 3 的 Windows 桌面客户端，用于统一使用与管理 Kirara_Server 上的各类应用服务。
 > 通过 **新建实例 → 选择方案 → 链接令牌** 三步模型，实现一次配置、多服务直达、自动认证登录。
