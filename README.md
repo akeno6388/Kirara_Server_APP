@@ -36,7 +36,7 @@
 
 ## ⬇️ 安装与更新
 
-1. 前往本仓库 **Releases** 页面下载最新安装包（`Kirara_Server_APP_Setup_x64.exe`）
+1. 前往本仓库 **Releases** 页面下载最新安装包（`Kirara_Server_APP_Setup_x64_vX.X.X.exe`）
 2. 运行安装程序，按向导完成安装
 3. 首次启动后注册/登录 Kirara_Server 通行证，即可开始创建你的第一个实例
 4. 程序有自动更新程序，可以实现自动卸载旧版本安装更新
