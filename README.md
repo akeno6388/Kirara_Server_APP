@@ -5,7 +5,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-0.9.7-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-0.9.8-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 </div>
 
@@ -88,7 +88,7 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 <details>
 <summary><b>令牌/实例数据存在哪里？</b></summary>
 
-数据保存在 `%APPDATA%/Kirara/` 目录下，令牌等敏感字段均已加密，请勿直接拷贝该目录给他人。
+数据保存在 `%APPDATA%/Kirara/` 目录下，令牌等敏感字段均已加密，请勿直接拷贝该目录给他人。如果软件的数据出现异常，可以删除该目录然后卸载软件重装即可解决问题。
 </details>
 
 ## 📄 许可证
@@ -100,11 +100,9 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 
 ## 🙏 致谢
 
-- [Windows App SDK / WinUI 3](https://github.com/microsoft/WindowsAppSDK)
-- [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet)
 - [LiteDB](https://github.com/lbedford/litedb)
-- [SignalR](https://github.com/dotnet/aspnetcore)
 - [OpenVPN](https://openvpn.net/)
+- [FreeRDP](https://github.com/FreeRDP)
 
 ---
 
