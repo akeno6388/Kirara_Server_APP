@@ -101,7 +101,7 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 ## 🙏 致谢
 
 - [LiteDB](https://github.com/lbedford/litedb)
-- [OpenVPN](https://openvpn.net/)
+- [OpenVPN](https://github.com/OpenVPN)
 - [FreeRDP](https://github.com/FreeRDP)
 
 ---
