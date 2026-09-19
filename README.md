@@ -5,7 +5,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.3.1-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-1.5.0-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 </div>
 
@@ -18,10 +18,13 @@
 - 🔑 **令牌管理器**：集中管理账户与证书，敏感字段经 **DPAPI + AES-256-GCM 双重加密**后落盘，支持导出/导入
 - 🔐 **自动登录引擎**：基于 WebView2 的自动化登录框架，内置多种方案适配，支持单步/分步/延迟登录与失败降级检测
 - 🛡️ **自研 OpenVPN 管理面板**：集成 openvpn.exe 引擎，实时状态、流量、日志展示，.ovpn 配置由服务端统一同步分发
-- 🔔 **实时通知中心**：SignalR WebSocket 实时推送 + 断线离线补拉 + 已读回执，通知带有信息流卡片轮播（图片/视频/HTML）
-- 💬 **议题评论系统**：方案页内嵌评论区，支持回复、点赞，多端同步
+- 🔔 **实时通知中心**：SignalR WebSocket 实时推送 + 断线离线补拉 + 已读回执，通知带有信息流卡片轮播（图片/视频/HTML）；点赞、回复、催更等互动通知实时送达
+- 💬 **议题评论系统**：方案页内嵌评论区，支持回复、点赞，多端同步；已扩展为「社区 / 我的最近评论 / 收藏 / 催更」四 Tab 视图
+- ⭐ **收藏系统**：媒体评论面板一键收藏/取消，状态实时同步；「我的收藏」集中管理并一键回跳资源页
+- 📣 **社区催更平台**：选择目标媒体库发布催更、点赞互动，管理员已读反馈实时推送
 - 🌈 **外观主题系统**：跟随系统 / 手动明暗 / 48 色 Win11 风格主题色，三级联动即时生效
 - 🚀 **快速开始模板**：内置常见服务组模板一键套用，封面图与模板由服务端管理
+- 🛠️ **WebView2 稳定性加固**：进程崩溃自愈与白屏看门狗自动重建（限次 + 冷却），文件对话框重入崩溃双重防护
 - 🖥️ **沉浸式界面**：Fluent 2 设计语言、自绘标题栏、DPI 自适应（PerMonitorV2）、全局忙状态遮罩与页面转场动画
 
 
@@ -88,7 +91,7 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 <details>
 <summary><b>令牌/实例数据存在哪里？</b></summary>
 
-数据保存在 `%APPDATA%/Kirara/` 目录下，令牌等敏感字段均已加密，请勿直接拷贝该目录给他人。如果软件的数据出现异常，可以删除该目录然后卸载软件重装即可解决问题。
+数据保存在 `%APPDATA%/Kirara/` 目录下，令牌等敏感字段均已加密，请勿直接拷贝该目录给他人。v1.5.0 起数据按账号隔离存储（`users/{账号ID}/` 子目录 + 全局层），切换账号互不可见。如果软件的数据出现异常，可以删除该目录然后卸载软件重装即可解决问题。
 </details>
 
 ## 📄 许可证
