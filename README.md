@@ -133,6 +133,3 @@ OpenVPN 方案需要创建虚拟网卡，应用声明了 `requireAdministrator`�
 <div align="center">Made with by SenVenth AC</div>
 
 ---
-| ❓ 常见问题 | 新增 FAQ：OpenVPN / FreeRDP 未安装或版本过旧 |
-
-如果你希望我调整措辞（比如更简洁/更详细）、补充商店截图占位、或把更新日志单独拆成 `CHANGELOG.md`，告诉我即可～
