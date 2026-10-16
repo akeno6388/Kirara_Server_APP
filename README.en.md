@@ -5,7 +5,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.6.6-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-1.6.7-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 </div>
 
@@ -36,6 +36,12 @@
 - 🚀 **Quick Start templates**: built-in common service-group templates for one-click application; cover images and templates are managed by the server
 - 🛠️ **WebView2 stability hardening**: self-healing from process crashes and automatic rebuild via a white-screen watchdog (limited retries + cooldown), plus double protection against file-dialog reentrancy crashes
 - 🖱️ **External file drag & drop**: files can be dragged straight from File Explorer / the desktop into Scheme pages, in-app standalone browser windows, and the Admin Panel (fixing the WinUI 3 issue where external drops are blocked — with a "no entry" cursor — because WebView2 is hosted windowlessly); once accepted, Windows natively forwards the drop to the page, which receives **real file entries**, so in-page drop highlights and upload controls work as usual
+- ⏻ **Dual-channel auto-start registration**: enabling "Start with Windows" now writes both a registry Run entry and an "at logon" scheduled task, the two backing each other up — if one is removed by a cleanup tool or disabled in Task Manager, the other still launches the app; the in-app setting is the single source of truth, and enabling it repairs a startup entry marked "disabled" by Windows or an optimizer; duplicate launches from the auto-start chain are silent no-ops that never drag a minimized or tray-hidden window back on screen
+- 🧹 **"Clear Data" truly returns to a fresh install**: besides account data and caches, it also clears the update installer directory, the remembered accounts and pre-filled credentials on the login page, and the auto-start entries registered by this build; afterwards the login account list is empty and no "disabled in settings but still starting" state remains; when another build (development/release) coexists, only this build's auto-start registration is removed, never the other's
+- 🔑 **Auto-login resilient to server restarts**: distinguishes "network / server temporarily unavailable" from "token definitively invalid" — during an API restart or gateway 5xx it backs off and retries while keeping credentials instead of treating them as invalid, so auto-login recovers once the server is back; password fallback is used only when the server explicitly rejects the token
+- 🚪 **Multi-device isolated logout**: logout now carries the device identifier so the server revokes only **this device's** tokens, no longer revoking the same account's auto-login credentials on the mobile client or another build
+- 💬 **Refined login page interactions**: switching login methods now cross-fades the title together with the input area (email = "Sign in with Email", AD domain = "Sign in with AD Domain"); the "Send code" button gained a "Sending..." in-progress state, greying out immediately on click instead of feeling unresponsive
+- 🔒 **Cross-instance OpenVPN disconnect protection**: when the development and release builds run side by side, quitting one no longer cuts off the VPN connection the other is using; if the connection process exits unexpectedly it reconnects automatically with exponential backoff (never after a user-initiated disconnect)
 - 🖥️ **Immersive interface**: Fluent 2 design language, custom-drawn title bar, DPI adaptation (PerMonitorV2), global busy-state overlay, and page transition animations
 
 ## 📋 System Requirements
