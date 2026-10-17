@@ -5,7 +5,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.6.7-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-1.6.8-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 </div>
 
@@ -28,7 +28,7 @@
 - 🛡️ **In-house OpenVPN management panel**: integrates the openvpn.exe engine with real-time status, traffic, and log display; .ovpn configurations are uniformly synchronized and distributed by the server
 - 🖲️ **Remote desktop input hardening**: embedded FreeRDP / RDP Schemes **silence the host IME** (suppressing local East Asian candidate windows and swallowed keystrokes, decided per thread/window, switching input mode only without changing the language) and bridge the clipboard without stealing focus — background copies no longer activate the host window or push it to the front
 - 🔔 **Real-time Notification Center**: SignalR WebSocket real-time push + offline catch-up after disconnection + read receipts; notifications feature feed-card carousels (image/video/HTML); interaction notifications such as likes, replies, and update requests are delivered in real time
-- 💬 **Issue comment system**: an embedded comment area on Scheme pages supporting replies and likes, synced across clients; now expanded into a four-tab view: "Community / My Recent Comments / Favorites / Update Requests"
+- 💬 **Issue comment system**: an embedded comment area on Scheme pages supporting replies and likes, synced across clients; every reply row now has its own **Reply** button (**flat model: no nesting**) — replying to a reply appends it flat under the main comment with a rendered **"Reply to XXX:"** prefix (display-only, never written into the text, and it follows nickname changes), and the replied user gets a "replied to your reply" notification; both the main input and the **inline reply input** carry an @ mention button (the @ list **includes yourself**, mentioning yourself sends no notification, and Backspace clears a whole @ fragment); now expanded into a four-tab view: "Community / My Recent Comments / Favorites / Update Requests", with **My Recent Comments** merging my **comments + replies + shares**
 - ⭐ **Favorites system**: one-click favorite/unfavorite in the media comment panel with real-time status sync; "My Favorites" provides centralized management and one-click jump back to the resource page
 - 📣 **Community update-request platform**: select a target media library to post update requests and like/interact; admin read feedback is pushed in real time
 - 🎮 **Multi-version game resource downloads**: within the game server resource platform, the same resource supports **parallel display of multiple versions** (each version on its own row, newest to oldest by version number), version-level SHA-256 integrity verification, real-time download progress feedback, and one-click open of the containing folder when complete
