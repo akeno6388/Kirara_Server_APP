@@ -5,7 +5,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.6.7-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
+![Version](https://img.shields.io/badge/version-1.6.8-blue) ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-lightgrey) ![Framework](https://img.shields.io/badge/.NET-10-purple) ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
 </div>
 
@@ -28,7 +28,7 @@
 - 🛡️ **自研 OpenVPN 管理面板**：集成 openvpn.exe 引擎，实时状态、流量、日志展示，.ovpn 配置由服务端统一同步分发
 - 🖲️ **远程桌面输入体验加固**：FreeRDP / RDP 内嵌方案下**静默宿主机输入法**（抑制本地东亚候选框与吞键，按线程/窗口判断，仅切换输入模式不改语言），并在不抢焦点的前提下桥接剪贴板——后台复制不再强行激活宿主窗口或把窗口置顶
 - 🔔 **实时通知中心**：SignalR WebSocket 实时推送 + 断线离线补拉 + 已读回执，通知带有信息流卡片轮播（图片/视频/HTML）；点赞、回复、催更等互动通知实时送达
-- 💬 **议题评论系统**：方案页内嵌评论区，支持回复、点赞，多端同步；已扩展为「社区 / 我的最近评论 / 收藏 / 催更」四 Tab 视图
+- 💬 **议题评论系统**：方案页内嵌评论区，支持回复、点赞，多端同步；回复条目右侧同样有「回复」按钮（**平铺方案：不嵌套**），回复某条回复会平铺追加到主评论下、正文前渲染「回复 XXX：」前缀（不写入正文，对方改昵称后实时跟随），被回复者会收到「回复了你的回复」提醒；主评论输入框与**行内回复输入框**都有 @ 提及按钮（@ 列表含本人，本人被 @ 不推送通知；退格可整段清除 @ 片段）；已扩展为「社区 / 我的最近评论 / 收藏 / 催更」四 Tab 视图，「我的最近评论」包含我发过的**评论 + 回复 + 分享**
 - ⭐ **收藏系统**：媒体评论面板一键收藏/取消，状态实时同步；「我的收藏」集中管理并一键回跳资源页
 - 📣 **社区催更平台**：选择目标媒体库发布催更、点赞互动，管理员已读反馈实时推送
 - 🎮 **游戏资源多版本下载**：游戏服务器资源平台内同一资源支持**多版本并行展示**（按版本号新→旧独立成行），版本级 SHA-256 完整性校验，下载进度实时反馈、完成后可一键打开文件夹
